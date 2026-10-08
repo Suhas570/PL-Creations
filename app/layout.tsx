@@ -54,6 +54,9 @@ export const metadata: Metadata = {
   authors: [{ name: "PL Creations", url: SITE_URL }],
   creator: "PL Creations",
   publisher: "PL Creations",
+  verification: {
+    google: "google2c4b62c76e6a1d4c",
+  },
   icons: {
     icon: "/icon.png",
     shortcut: "/icon.png",
