@@ -1,11 +1,25 @@
-"use client";
-
 import React from "react";
+import type { Metadata } from "next";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { MobileStickyBar } from "@/components/layout/MobileStickyBar";
 import { WhatsAppFloat } from "@/components/layout/WhatsAppFloat";
 import { buildWhatsAppUrl } from "@/lib/utils";
+
+export const metadata: Metadata = {
+  title: "Careers & Job Openings in Bengaluru | Join PL Creations",
+  description:
+    "Explore career opportunities at PL Creations in Bengaluru. We are hiring Full-Stack Developers, CCTV Security Technicians, and B2B Sales Executives.",
+  alternates: {
+    canonical: "/careers",
+  },
+  openGraph: {
+    title: "Careers at PL Creations Bengaluru",
+    description:
+      "Explore career opportunities at PL Creations in Bengaluru. We are hiring Full-Stack Developers, CCTV Security Technicians, and B2B Sales Executives.",
+    url: "/careers",
+  },
+};
 import { 
   Briefcase, 
   Sparkles, 

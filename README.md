@@ -33,11 +33,11 @@ cp .env.example .env.local
 
 Configure your environment variables:
 ```env
-NEXT_PUBLIC_SITE_URL=https://plcreations.com
-NEXT_PUBLIC_WHATSAPP_NUMBER=9187535990
+NEXT_PUBLIC_SITE_URL=https://www.plcreations.in
+NEXT_PUBLIC_WHATSAPP_NUMBER=919606135280
 NEXT_PUBLIC_COMPANY_NAME="PL Creations"
-NEXT_PUBLIC_COMPANY_EMAIL="contact@plcreations.com"
-NEXT_PUBLIC_COMPANY_PHONE="+91 9187535990"
+NEXT_PUBLIC_COMPANY_EMAIL="sales@plcreation.in"
+NEXT_PUBLIC_COMPANY_PHONE="+91 96061 35280"
 ```
 
 ### 3. Run Development Server

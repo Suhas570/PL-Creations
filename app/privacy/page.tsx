@@ -8,6 +8,9 @@ import { WhatsAppFloat } from "@/components/layout/WhatsAppFloat";
 export const metadata: Metadata = {
   title: "Privacy Policy | PL Creations",
   description: "Privacy Policy and data protection standards for PL Creations.",
+  alternates: {
+    canonical: "/privacy",
+  },
 };
 
 export default function PrivacyPage() {

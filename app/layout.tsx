@@ -25,23 +25,13 @@ export const viewport: Viewport = {
   maximumScale: 5,
 };
 
-const getSiteUrl = (): URL => {
-  const envUrl = process.env.NEXT_PUBLIC_SITE_URL?.trim();
-  if (envUrl) {
-    const formatted = envUrl.startsWith("http://") || envUrl.startsWith("https://")
-      ? envUrl
-      : `https://${envUrl}`;
-    try {
-      return new URL(formatted);
-    } catch {
-      // Ignore invalid URL parse and fallback
-    }
-  }
-  return new URL("https://plcreations.in");
-};
+const SITE_URL = "https://www.plcreations.in";
 
 export const metadata: Metadata = {
-  metadataBase: getSiteUrl(),
+  metadataBase: new URL(SITE_URL),
+  alternates: {
+    canonical: "/",
+  },
   title: {
     default: "PL CREATIONS | Apps and Web Developers • Technology • Security • Growth",
     template: "%s | PL Creations",
@@ -61,8 +51,9 @@ export const metadata: Metadata = {
     "School Portals",
     "Clinic Management Systems",
   ],
-  authors: [{ name: "PL Creations", url: "https://plcreations.in" }],
+  authors: [{ name: "PL Creations", url: SITE_URL }],
   creator: "PL Creations",
+  publisher: "PL Creations",
   icons: {
     icon: "/icon.png",
     shortcut: "/icon.png",
@@ -71,7 +62,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_IN",
-    url: "https://plcreations.in",
+    url: SITE_URL,
     siteName: "PL Creations",
     title: "PL CREATIONS — BUILD. SECURE. GROW.",
     description: "Technology, Apps, Web Development, CCTV & Security agency for modern businesses in Bengaluru & across India.",

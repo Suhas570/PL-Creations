@@ -25,6 +25,15 @@ export const metadata: Metadata = {
   title: "About Us | Technology, Apps, Sales & Security Agency Bengaluru",
   description:
     "Learn about PL Creations: our engineering philosophy, Bengaluru headquarters, and mission to empower businesses with high-velocity web applications, sales engines, and security systems.",
+  alternates: {
+    canonical: "/about",
+  },
+  openGraph: {
+    title: "About Us | PL Creations Bengaluru",
+    description:
+      "Learn about PL Creations: our engineering philosophy, Bengaluru headquarters, and mission to empower businesses with high-velocity web applications, sales engines, and security systems.",
+    url: "/about",
+  },
 };
 
 export default function AboutPage() {

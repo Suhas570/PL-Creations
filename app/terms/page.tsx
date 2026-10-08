@@ -8,6 +8,9 @@ import { WhatsAppFloat } from "@/components/layout/WhatsAppFloat";
 export const metadata: Metadata = {
   title: "Terms of Service | PL Creations",
   description: "Terms of Service and project engagement terms for PL Creations.",
+  alternates: {
+    canonical: "/terms",
+  },
 };
 
 export default function TermsPage() {

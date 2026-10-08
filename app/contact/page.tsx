@@ -1,6 +1,5 @@
-"use client";
-
 import React from "react";
+import type { Metadata } from "next";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { MobileStickyBar } from "@/components/layout/MobileStickyBar";
@@ -8,6 +7,21 @@ import { WhatsAppFloat } from "@/components/layout/WhatsAppFloat";
 import { LocationMapSection } from "@/components/home/LocationMapSection";
 import { siteConfig } from "@/content/site";
 import { buildCallUrl, buildWhatsAppUrl } from "@/lib/utils";
+
+export const metadata: Metadata = {
+  title: "Contact PL Creations | Instant WhatsApp & Call Consultation Bengaluru",
+  description:
+    "Connect directly with technical leadership at PL Creations for web application development, CCTV installation, biometric systems, and marketing solutions in Bengaluru.",
+  alternates: {
+    canonical: "/contact",
+  },
+  openGraph: {
+    title: "Contact Us | PL Creations Bengaluru",
+    description:
+      "Connect directly with technical leadership at PL Creations for web development, CCTV installation, biometric systems, and growth solutions.",
+    url: "/contact",
+  },
+};
 import { 
   Phone, 
   Mail, 

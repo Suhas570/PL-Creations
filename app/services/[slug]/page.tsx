@@ -43,9 +43,13 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: `${service.title} | PL Creations Bengaluru`,
     description: service.shortDescription,
+    alternates: {
+      canonical: `/services/${slug}`,
+    },
     openGraph: {
       title: `${service.title} | PL Creations`,
       description: service.shortDescription,
+      url: `/services/${slug}`,
     },
   };
 }

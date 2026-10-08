@@ -21,6 +21,15 @@ export const metadata: Metadata = {
   title: "Industries We Transform | Schools, Clinics, PGs, Retail & B2B",
   description:
     "Tailored digital growth and security systems engineered for Indian educational institutions, healthcare clinics, paying guest hostels, retail stores, and manufacturing firms by PL Creations.",
+  alternates: {
+    canonical: "/industries",
+  },
+  openGraph: {
+    title: "Industries We Transform | PL Creations Bengaluru",
+    description:
+      "Tailored digital growth and security systems engineered for Indian educational institutions, healthcare clinics, paying guest hostels, retail stores, and manufacturing firms by PL Creations.",
+    url: "/industries",
+  },
 };
 
 export default function IndustriesPage() {

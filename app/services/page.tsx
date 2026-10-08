@@ -21,6 +21,15 @@ export const metadata: Metadata = {
   title: "Specialized Technology, Security & Marketing Services",
   description:
     "Explore full-spectrum technology solutions from PL Creations: Web Applications, B2B Sales Pipelines, CCTV Installation, Biometric Systems, Digital Marketing, and SEO.",
+  alternates: {
+    canonical: "/services",
+  },
+  openGraph: {
+    title: "Services & Solutions | PL Creations Bengaluru",
+    description:
+      "Explore full-spectrum technology solutions from PL Creations: Web Applications, B2B Sales Pipelines, CCTV Installation, Biometric Systems, Digital Marketing, and SEO.",
+    url: "/services",
+  },
 };
 
 export default function ServicesIndexPage() {
